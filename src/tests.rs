@@ -69,6 +69,7 @@ impl RuntimeHandle for MockHandle {
                 typ: self.canned_result.clone(),
                 diagnostics: vec![],
                 node_types: Default::default(),
+                signature: serde_json::Value::Null,
             }),
         }
     }
