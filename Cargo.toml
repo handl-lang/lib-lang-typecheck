@@ -54,8 +54,6 @@ hnl-engine-typecheck = { path = "../engine-typecheck" }
 handl-language = { path = "../kernel/crates/handl-language" }
 handl-value = { path = "../kernel/crates/handl-value" }
 
-[patch."https://github.com/handl-lang/lib-char"]
-handl-lib-char = { path = "../lib-char" }
 
 [patch."https://github.com/handl-lang/lib-str-handl"]
 handl-lib-str-handl = { path = "../lib-str-handl" }
