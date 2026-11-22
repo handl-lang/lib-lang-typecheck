@@ -58,9 +58,6 @@ handl-language = { path = "../kernel/crates/handl-language" }
 handl-value = { path = "../kernel/crates/handl-value" }
 
 
-[patch."https://github.com/handl-lang/lib-str-handl"]
-handl-lib-str-handl = { path = "../lib-str-handl" }
-
 [patch."https://github.com/handl-lang/host"]
 handl-plugin-lib-char-native = { path = "../lib-char-native" }
 handl-plugin-lib-lang-typecheck = { path = "../lib-lang-typecheck" }
@@ -74,12 +71,6 @@ handl-runtime = { path = "../host/crates/handl-runtime" }
 [patch."https://github.com/handl-lang/lib-char-native"]
 handl-plugin-lib-char-native = { path = "../lib-char-native" }
 
-[patch."https://github.com/handl-lang/lib-desugar"]
-handl-lib-desugar = { path = "../lib-desugar" }
-
 [patch."https://github.com/handl-lang/lib-lang-typecheck"]
 handl-plugin-lib-lang-typecheck = { path = "../lib-lang-typecheck" }
-
-[patch."https://github.com/handl-lang/lib-loader"]
-handl-lib-loader = { path = "../lib-loader" }
 
