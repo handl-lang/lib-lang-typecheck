@@ -12,7 +12,7 @@ use std::rc::Rc;
 use handl_language::LangError;
 use handl_language::{Ast, AstNode, Language, ast_value, language_value};
 use handl_platform::{EvalContext, EvalError, Function, Module, ModuleLookup};
-use hnl_engine_typecheck::TypecheckResult;
+use hnl_tool_typecheck::TypecheckResult;
 use handl_runtime::{CompiledHandle, RuntimeFactory, RuntimeHandle};
 use serde_json::{Value, json};
 
