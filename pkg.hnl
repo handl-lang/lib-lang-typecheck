@@ -1,0 +1,13 @@
+-- lib-lang-typecheck: the `lang_typecheck` module — the `typecheck`
+-- meta function as a composable `plugin-lib-*` leaf crate.
+-- Transitional layout: the .hnl surface is
+-- `handl-packages/lang_typecheck/lang_typecheck.hnl`; the typechecker
+-- stays Rust.
+{
+  modules: ["lang_typecheck"],
+  name: "lang_typecheck",
+  description: "The typecheck meta function — type-check a handl AST against its language definition.",
+  license: "MIT",
+  keywords: ["typecheck", "meta", "types", "lang", "handl"],
+  homepage: "https://github.com/handl-lang/lib-lang-typecheck",
+}
