@@ -105,6 +105,18 @@ impl ModuleLookup for TypecheckModule {
             _ => self.delegate.as_ref().and_then(|d| d.lookup(name)),
         }
     }
+
+    /// P-013 T-148: forward module-export enumeration to the delegate so
+    /// `import m` signature records (`type.module_sig`) see through this
+    /// wrapper to the modules below it.
+    fn lookup_module_exports(
+        &self,
+        module_name: &str,
+    ) -> Option<Vec<(String, Option<serde_json::Value>)>> {
+        self.delegate
+            .as_ref()
+            .and_then(|d| d.lookup_module_exports(module_name))
+    }
 }
 
 /// The `typecheck.typecheck(lang, ast)` host function (ADR-0054 §6).
