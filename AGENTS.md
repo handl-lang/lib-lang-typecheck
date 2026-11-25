@@ -33,7 +33,7 @@ composable `plugin-lib-*` leaf crate.
 
 ```bash
 cargo test    # the Rust suite
-bash ci.sh    # the bupha gate — delegates to scripts/hnl-gate.sh
+workflows/gate.yaml    # the bupha gate — delegates to scripts/hnl-gate.sh
 ```
 
 ## License
