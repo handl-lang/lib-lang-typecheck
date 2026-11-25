@@ -3,6 +3,7 @@
 -- Transitional layout: the .hnl surface is
 -- `handl-packages/lang_typecheck/lang_typecheck.hnl`; the typechecker
 -- stays Rust.
+-- test_coverage "none": comment-only interface decl — the typechecker stays Rust.
 {
   modules: ["lang_typecheck"],
   name: "lang-typecheck",
@@ -10,4 +11,5 @@
   license: "MIT",
   keywords: ["typecheck", "meta", "types", "lang", "handl"],
   homepage: "https://github.com/handl-lang/lib-lang-typecheck",
+  test_coverage: "none",
 }
