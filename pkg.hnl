@@ -5,7 +5,7 @@
 -- stays Rust.
 {
   modules: ["lang_typecheck"],
-  name: "lang_typecheck",
+  name: "lang-typecheck",
   description: "The typecheck meta function — type-check a handl AST against its language definition.",
   license: "MIT",
   keywords: ["typecheck", "meta", "types", "lang", "handl"],
